@@ -1,8 +1,8 @@
 {
-    "id": "nodebb-theme-classic",
-    "name": "Classic Theme for NodeBB",
-    "description": "A classic theme for NodeBB.",
-    "url": "https://www.github.com/paaltomo/nodebb-theme-classic",
+    "id": "nodebb-theme-gruppe-adler",
+    "name": "Theme for gruppe-adler.de",
+    "description": "aaargs enough with the json files already!",
+    "url": "https://www.github.com/gruppe-adler/nodebb-theme-gruppe-adler",
     "screenshot": "screenshot.png",
     "templates": "templates"
 }
