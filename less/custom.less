@@ -1,123 +1,172 @@
-.footer {
-}
-
 html { 
-  background: url(http://www.gruppe-adler.de/wp-content/uploads/2014/08/M4XGJNe.jpg) no-repeat;
+  background: #a2a2a2;
   height: 100%
 }
 body {
   background-color: transparent;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+
 }
+
 
 a {
-    color: #ff6209;
-}
-
-textarea, input, .composer .write, .composer .preview  {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+color: #D18D1F;
 }
 
 .badge {
-    background-color: transparent;
-    border-radius: 0;
-    color: #999;
-    padding: 3px 11px;
-}
-
-.badge.topic-badge {
-    color: #fff;
+background-color: transparent;
+border-radius: 0;
+color: #888 !important;
+padding: 3px 11px;
 }
 
 .btn-primary {
-    background-color: #ff6209;
-    border-color: #ff6209;
+background-color: #D18D1F;
+border-color: #D18D1F;
 }
 
 .btn.btn-primary {
-    color: white;
-    background-color: #ff6209;
-    border-color: #ff6209;
-    border-radius: 0px;
-    border: 1px solid #ff6209;
-    float: right;
+background-color: #D18D1F;
+border-color: #D18D1F;
+border-radius: 0px;
+border: 1px solid #D18D1F;
+float: right;
+color: #fff;
 }
 
 .btn-default {
-    color: #ff6209;
-    background-color: #fff;
-    border-color: #ff6209;
+color: #D18D1F;
+background-color: #fff;
+border-color: #D18D1F;
 }
 
 .topic .posts>li .topic-title {
-    color: #ff6209;
+color: #D18D1F;
 }
 
 .topic .posts>li {
-    border-left: 6px solid #ff6209;
+border-left: 6px solid #D18D1F;
 }
 
 .topic .post-bar {
-    border-left: 6px solid #ff6209;
+border-left: 6px solid #D18D1F;
 }
 
 .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
-    background-color: #ff6209;
-    border-color: #ff6209;
+background-color: #D18D1F;
+border-color: #D18D1F;
 }
 
 .btn-link {
-    color: #ff6209;
-}
-.pull-right {
-    float: none;
+color: #D18D1F;
 }
 
-.description .pull-right{
-    float: none !important;
-    margin-left: -10px;
-    margin-top: 0px;
+ .description .pull-right{
+margin-left: -10px;
+margin-left: -10px;
+margin-top: 5px;
 }
 
 .loading-bar {
-    background: #000;
+background: #000;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
-    color: #fff;
-    background-color: #000;
+color: #fff;
+background-color: #000;
 }
 
-.timeago, .post-content , .category-text, .description{
-    font-weight: 400 !important;
-    font-family: 'Source Sans Pro', sans-serif !important;
+.nav nav-pills account-sub-links>li, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+color: #000;	
 }
 
-
-.tag-item {
-    background-color: #000;
-    color: #fff;
-    font-weight: 300;
-    font-family: 'Source Sans Pro';
-    border-radius: 0px; border: none;
+.timeago, .post-content {
+font-weight: 400 !important;
+font-family: 'Source Sans Pro', sans-serif !important;
 }
 
-.tag-topic-count {
-    background-color: #fff;
-    color: #000;
-    font-weight: 300;
-    font-family: 'Source Sans Pro';
-    border-radius: 0px; border: none;
+@media (min-width: 900px){
+.col-md-12 {
+width: 50%;
+}
 }
 
-.home h4 {
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro';
-    font-weight: 500;
+.home .category-item .category-box .category-info .description {
+	overflow: hidden;  
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	top: 35px;
+	position: relative;
+	padding-bottom: 30px;
 }
 
-.category .category-stat.replies .no-replies{
-    font-weight: 400;
-    font-family: 'Source Sans Pro';
+.home .category-item .category-box {
+	padding-bottom: 20px;
+	border: none;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
 }
 
+.stats-card small {
+	color: #333;
+}
+
+.copyright a, .copyright a:hover{
+	color: #fff;
+}
+
+.nav nav-pills a{
+	color: #fff !important;
+}
+
+.header-topic-title span {
+	color: #D18D1F !important;
+}
+
+.category-info h4 {
+	background: #000;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 5px 5px 10px;
+	font-family: 'Oswald';
+	font-size: 20px;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 100;
+}
+
+.description {
+	color: #888 !important;
+}
+
+.category-info h4:hover {
+	color: #D18D1F !important;
+}
+
+.post-preview-content {
+	
+	line-height: 22px !important;
+}
+
+.post-preview clearfix{
+padding: 30px 10px 0px 10px;
+margin-bottom: -28px;
+}
+
+.post-preview:last-child {
+margin-bottom: -28px !important;
+}
+
+.home .category-item .category-box .post-preview {
+padding: 2px 10px 10px 0px;	
+}
+
+.nav>li>a {
+	color: #fff;
+}
+
+.user-info>a{
+	color: #fff;
+}
