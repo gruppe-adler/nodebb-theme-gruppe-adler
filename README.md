@@ -1,10 +1,10 @@
-forked from nodebb-theme-classic ! 
+forked from https://github.com/Paaltomo/nodebb-theme-classic ! 
 
 
 Gruppe Adler
 =========================
 
-A classic theme for NodeBB. For those who want a more traditional feel to their forums.
+A theme for NodeBB
 
 ## Credits
 
