@@ -1,11 +1,11 @@
 {
-  "name": "nodebb-theme-classic",
+  "name": "nodebb-theme-gruppe-adler",
   "version": "0.0.13",
-  "description": "Classic theme for NodeBB",
+  "description": "Theme for www.gruppe-adler.de",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Paaltomo/nodebb-theme-classic"
+    "url": "https://github.com/gruppe-adler/nodebb-theme-gruppe-adler"
   },
   "keywords": [
     "nodebb",
@@ -18,19 +18,16 @@
       "name": "Jacob Martin",
       "email": "jacob@jacobmartin.ca",
       "url": "https://github.com/jacobmartinca"
+    }, 
+    {
+      "name": "Paaltomo",
+      "url": "https://github.com/Paaltomo"
     }
   ],
   "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/Paaltomo/nodebb-theme-classic/issues"
-  },
-  "homepage": "https://github.com/Paaltomo/nodebb-theme-classic",
+  "homepage": "https://github.com/gruppe-adler/nodebb-theme-gruppe-adler",
   "_id": "nodebb-theme-classic@0.0.13",
   "maintainers": [
-    {
-      "name": "paaltomo",
-      "email": "tanner@paaltomo.com"
-    }
   ],
   "directories": {},
   "scripts": {},
