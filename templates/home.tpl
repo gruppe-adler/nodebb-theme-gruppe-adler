@@ -30,13 +30,14 @@
 							<!-- ELSE -->
 							<a href="{relative_path}/category/{categories.slug}" itemprop="url">
 							<!-- ENDIF categories.link-->
-								<h4><!-- IF categories.icon --><i class="fa {categories.icon}"></i> <!-- ENDIF categories.icon -->{categories.name}</h4><!-- IF !categories.link -->
+								<h4><!-- IF categories.icon --><i class="fa {categories.icon}"></i> <!-- ENDIF categories.icon -->{categories.name}</h4>	<!-- IF !categories.link -->
 							<div class="pull-right"><span class="badge {categories.unread-class}"><i class="fa fa-book" data-toggle="tooltip" title="[[global:topics]]"></i> <span class="human-readable-number" title="{categories.topic_count}">{categories.topic_count}</span> [[global:topics]] &nbsp; <i class="fa fa-comment" data-toggle="tooltip" title="[[global:posts]]"></i> <span class="human-readable-number" title="{categories.post_count}">{categories.post_count}</span> [[global:posts]]</span></div>
-							<!-- ENDIF !categories.link -
+							<!-- ENDIF !categories.link -->
 							</a>
+						
 							<div class="description" itemprop="description">{categories.description}
 							<!-- IF !categories.link -->
-						->
+						
 							</div>
 						</div>
 
