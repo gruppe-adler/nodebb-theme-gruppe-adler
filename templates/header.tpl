@@ -38,12 +38,7 @@
 
 <body>
 <!-- begin hacky menu try -->
-<div class="menu-hauptmenu-container"><ul id="menu-hauptmenu" class="menu nav-menu"><li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="http://www.gruppe-adler.de/mitspielen/">MITSPIELEN</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="http://forum.gruppe-adler.de">FORUM</a></li>
-<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://www.gruppe-adler.de/server/">SERVER</a></li>
-<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="http://www.gruppe-adler.de/wir-ueber-uns/">ÜBER UNS</a></li>
-<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-11"><a href="http://www.gruppe-adler.de/">HOME</a></li>
-</ul></div>
+<div>HOME</div>
 <!-- end hacky menu try -->
 	<div class="navbar navbar-default navbar-fixed-top header" role="navigation" id="header-menu">
 		<div class="loading-bar"></div>
