@@ -8,7 +8,7 @@
 		<div class="row">
 
 			<!-- BEGIN categories -->
-			<div class="col-md-12 col-sm-12 col-xs-12 category-item toplevel" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
+			<div class="col-xs-12 col-sm-12 col-md-6 category-item toplevel" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
 				<meta itemprop="name" content="{categories.name}">
 
 				<div class="category-bar">
