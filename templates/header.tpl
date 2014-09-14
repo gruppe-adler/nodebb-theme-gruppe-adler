@@ -41,6 +41,7 @@
 <div>HOME</div>
 <!-- end hacky menu try -->
 	<div class="navbar navbar-default navbar-fixed-top header" role="navigation" id="header-menu">
+        <!-- IMPORT partials/fake-header.tpl -->
 		<div class="loading-bar"></div>
 		<div class="container">
 			<!-- IMPORT partials/menu.tpl -->
