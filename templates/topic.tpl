@@ -90,6 +90,9 @@
 									<!-- ENDIF posts.editor.username -->
 								</small>
 
+								<a class="post-permalink" href="#{posts.index}">
+									#{posts.index}
+								</a>
 								<div class="dropdown share-dropdown">
 									<a href="#" class="dropdown-toggle postMenu favourite-tooltip" id="postMenu_{posts.pid}" data-toggle="dropdown">
 										<i class="fa fa-heart"></i>
