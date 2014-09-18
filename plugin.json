@@ -10,6 +10,7 @@
 		"vendor": "static/vendor"
 	},
 	"scripts": [
-		"static/lib/classic.js"
+		"static/lib/classic.js",
+		"static/lib/helpers.js"
 	]
 }
