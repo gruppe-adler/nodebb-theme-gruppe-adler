@@ -9,6 +9,7 @@
 
 			<!-- BEGIN categories -->
 				<!-- IMPORT partials/home-category-head.tpl -->
+			{function.bsNewRowOnOdd}
 			<!-- END categories -->
 		</div>
 	</div>
