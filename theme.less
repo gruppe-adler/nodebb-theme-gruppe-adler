@@ -31,6 +31,9 @@
     }
 }
 
+.subcategories {
+    margin-bottom: 20px;
+}
 .subcategories > [data-cid] {
     background-color: white;
 }
@@ -46,14 +49,20 @@ h4.category-title {
 }
 .category-header {
     display: block;
+    margin-top: 10px;
+    margin-bottom: 0;
     background-color: white;
-    color: black;
     padding: 0;
     text-align: left;
     height: @category-header-height;
     .badge {
         float: right;
     }
+}
+
+.category-header.subcategory-header {
+    margin-top: 0;
+    padding-left: 50px;
 }
 
 /*

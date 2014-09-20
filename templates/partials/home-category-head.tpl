@@ -1,5 +1,6 @@
 <div class="{categories.class}" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
 	<meta itemprop="name" content="{categories.name}">
+
 	<!-- IF categories.link -->
 	<a style="color: {categories.color};" href="{categories.link}" itemprop="url" target="_blank" title="{categories.description}" id="category-{categories.cid}">
 	<!-- ELSE -->
@@ -28,4 +29,9 @@
 
 
 	</a>
+
+<!-- BEGIN children -->
+<!-- IMPORT partials/home-category-child.tpl -->
+<!-- END children -->
+
 </div>
