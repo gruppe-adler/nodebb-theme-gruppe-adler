@@ -1,50 +1,31 @@
 <div class="{categories.class}" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
 	<meta itemprop="name" content="{categories.name}">
-	<h4 class="category-title">
-		<!-- IF !categories.link -->
-		<span class="badge {categories.unread-class}">{categories.topic_count} </span>
-		<!-- ENDIF !categories.link -->
-
-		<!-- IF categories.link -->
-		<a href="{categories.link}" itemprop="url" target="_blank">
-			<!-- ELSE -->
-			<a href="{relative_path}/category/{categories.slug}" itemprop="url">
-				<!-- ENDIF categories.link -->
-				{categories.name}
-			</a>
-	</h4>
-
 	<!-- IF categories.link -->
-	<a style="color: {categories.color};" href="{categories.link}" itemprop="url" target="_blank">
+	<a style="color: {categories.color};" href="{categories.link}" itemprop="url" target="_blank" title="{categories.description}" id="category-{categories.cid}">
 	<!-- ELSE -->
-	<a style="color: {categories.color};" href="{relative_path}/category/{categories.slug}" itemprop="url">
+	<a
+			href="{relative_path}/category/{categories.slug}"
+			itemprop="url"
+			title="{categories.description}"
+			class="category-header"
+			id="category-{categories.cid}"
+		>
 	<!-- ENDIF categories.link -->
 		<div
-			id="category-{categories.cid}" class="category-header category-header-image-{categories.imageClass}"
-			title="{categories.description}"
-			style="
+			class="category-header-image-{categories.imageClass}"
+			style="color: {categories.color};
 					<!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
 					<!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
 					"
 			>
-			<div id="category-{categories.cid}" class="category-slider-{categories.post_count}">
-				<!-- IF categories.icon -->
-				<div class="category-box"><i class="fa {categories.icon} fa-4x"></i></div>
-				<!-- ENDIF categories.icon -->
-				<div class="category-box" itemprop="description">{categories.description}</div>
-
-				<!-- BEGIN posts -->
-				<div class="category-box">
-					<div class="post-preview">
-						<img src="{categories.posts.user.picture}" class="pull-left" />
-						<p class=""><strong>{categories.posts.user.username}</strong>: {categories.posts.content}</p>
-					</div>
-				</div>
-				<!-- END posts -->
-				<!-- IF categories.icon -->
-				<div class="category-box"><i class="fa {categories.icon} fa-4x"></i></div>
-				<!-- ENDIF categories.icon -->
-			</div>
+			<i class="fa {categories.icon} fa-2x"></i>
 		</div>
+		<!-- IF !categories.link -->
+		<span class="badge {categories.unread-class}">{categories.topic_count} / {categories.post_count}</span>
+		<!-- ENDIF !categories.link -->
+		<h4 class="category-title">{categories.name}</h4>
+		<div itemprop="description" class="category-description">{categories.description}</div>
+
+
 	</a>
 </div>
