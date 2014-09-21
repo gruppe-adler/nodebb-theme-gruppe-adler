@@ -1,2 +1,70 @@
-@import "../nodebb-theme-vanilla/theme";
-@import "./less/style";
+@import "../nodebb-theme-vanilla/less/bootstrap/bootstrap";
+
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro|Oswald);
+
+@border-radius-base: 0;
+@border-radius-large: 0;
+@border-radius-small: 0;
+@font-family-sans-serif: 'Source Sans Pro', sans-serif;
+@brand-primary: #d18d1f;
+@body-bg: #a2a2a2;
+@navbar-default-bg: white;
+@navbar-default-color: #333;
+
+@import "../nodebb-theme-vanilla/less/vanilla";
+@import "../nodebb-theme-vanilla/modules";
+
+@import "./less/fake-hauptmenu";
+
+@category-header-height: 50px;
+
+[class~=category-header-image-auto] {
+    float: left;
+    margin-right: 10px;
+    width: @category-header-height;
+    height: @category-header-height;
+    padding-top: @category-header-height / 2;
+    padding-left: 10px;
+    .fa-2x {
+        display: block;
+        margin-top: -0.5em;
+    }
+}
+
+.subcategories {
+    margin-bottom: 20px;
+}
+.subcategories > [data-cid] {
+    background-color: white;
+}
+
+h4.category-title {
+    width: auto;
+    text-align: left;
+    color: black;
+}
+.category-description {
+    text-align: left;
+    color: gray;
+}
+.category-header {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color: white;
+    padding: 0;
+    text-align: left;
+    height: @category-header-height;
+    .badge {
+        float: right;
+    }
+}
+
+.category-header.subcategory-header {
+    margin-top: 0;
+    padding-left: 50px;
+}
+
+/*
+@import "./less/custom";
+*/

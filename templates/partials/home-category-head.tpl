@@ -1,47 +1,37 @@
-<div class="col-xs-12 col-sm-12 col-md-6 category-item toplevel" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
+<div class="{categories.class}" data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}">
 	<meta itemprop="name" content="{categories.name}">
 
-	<div class="category-bar">
+	<!-- IF categories.link -->
+	<a style="color: {categories.color};" href="{categories.link}" itemprop="url" target="_blank" title="{categories.description}" id="category-{categories.cid}">
+	<!-- ELSE -->
+	<a
+			href="{relative_path}/category/{categories.slug}"
+			itemprop="url"
+			title="{categories.description}"
+			class="category-header"
+			id="category-{categories.cid}"
+		>
+	<!-- ENDIF categories.link -->
+		<div
+			class="category-header-image-{categories.imageClass}"
+			style="color: {categories.color};
+					<!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
+					<!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
+					"
+			>
+			<i class="fa {categories.icon} fa-2x"></i>
+		</div>
+		<!-- IF !categories.link -->
+		<span class="badge {categories.unread-class}">{categories.topic_count} / {categories.post_count}</span>
+		<!-- ENDIF !categories.link -->
+		<h4 class="category-title">{categories.name}</h4>
+		<div itemprop="description" class="category-description">{categories.description}</div>
 
-		<!-- IF categories.link -->
-		<a href="{categories.link}" itemprop="url" target="_blank">
-			<!-- ELSE -->
-			<a href="{relative_path}/category/{categories.slug}" itemprop="url">
-				<!-- ENDIF categories.link -->
 
-			</a>
+	</a>
 
-			<div class="category-box">
+<!-- BEGIN children -->
+<!-- IMPORT partials/home-category-child.tpl -->
+<!-- END children -->
 
-				<div class="category-info">
-
-					<!-- IF categories.link -->
-					<a href="{categories.link}" itemprop="url" target="_blank">
-						<!-- ELSE -->
-						<a href="{relative_path}/category/{categories.slug}" itemprop="url">
-							<!-- ENDIF categories.link-->
-							<h4 style="background: {categories.bgColor}; color: {categories.color}"><!-- IF categories.icon --><i class="fa {categories.icon}"></i> <!-- ENDIF categories.icon -->{categories.name}</h4>	<!-- IF !categories.link -->
-							<div class="pull-right"><span class="badge {categories.unread-class}"><i class="fa fa-book" data-toggle="tooltip" title="[[global:topics]]"></i> <span class="human-readable-number" title="{categories.topic_count}">{categories.topic_count}</span> [[global:topics]] &nbsp; <i class="fa fa-comment" data-toggle="tooltip" title="[[global:posts]]"></i> <span class="human-readable-number" title="{categories.post_count}">{categories.post_count}</span> [[global:posts]]</span></div>
-							<!-- ENDIF !categories.link -->
-						</a>
-
-						<div class="description" itemprop="description">{categories.description}
-							<!-- IF !categories.link -->
-
-						</div>
-				</div>
-
-				<!-- BEGIN posts -->
-				<div class="post-preview clearfix">
-					<div class="post-preview-content">
-								<span class="pull-right">
-								Last post by
-									<a href="<!-- IF categories.posts.user.userslug -->{relative_path}/user/{categories.posts.user.userslug}<!-- ELSE -->#<!-- ENDIF categories.posts.user.userslug-->">
-										<img src="{categories.posts.user.picture}" title="{categories.posts.user.username}" class="pull-left user-img" /> {categories.posts.user.username}</a> in <a href="{relative_path}/topic/{categories.posts.topic.slug}<!-- IF categories.posts.index -->/{categories.posts.index}<!-- ENDIF categories.posts.index -->">{categories.posts.topic.title}</a> <span class="timeago" title="{categories.posts.relativeTime}"></span></span>
-					</div>
-				</div>
-				<!-- END posts -->
-				<!-- ENDIF !categories.link -->
-			</div>
-	</div>
 </div>
