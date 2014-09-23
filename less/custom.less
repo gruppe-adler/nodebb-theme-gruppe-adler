@@ -154,8 +154,17 @@ border:1px solid #adadad;
 }
 
 .fa-star {
-color: @brand-primary;
+color: @brand-info;
 }
+
+.write::-webkit-input-placeholder::before {
+	 content:"Dein Beitrag";
+}
+
+.preview::-webkit-input-placeholder::before {
+	 content:"Beitragsvorschau";
+}
+
 
 .nav-pills>li>a {
 color: #333;
