@@ -114,7 +114,7 @@ background-color: @brand-info;
 border:1px solid darken(@brand-info, 5%);	
 }
 
-#chat-close-btn:hover {
+#chat-close-btn:hover,#chat-close-btn:focus,#chat-close-btn:active {
 background-color: darken(@brand-info, 5%);
 border:1px solid darken(@brand-info, 10%);	
 }
@@ -124,7 +124,7 @@ background-color: @brand-info;
 border:1px solid darken(@brand-info, 5%);	
 }
 
-.ignore:hover {
+.ignore:hover,.ignore:active, .ignore:focus {
 background-color: darken(@brand-info, 5%);	
 border:1px solid darken(@brand-info, 10%);	
 }
@@ -134,9 +134,10 @@ background-color: @brand-info;
 border:1px solid darken(@brand-info, 5%);	
 }
 
-.favourite:hover {
+.favourite:hover, .favourite:active, .favourite:focus {
 background-color: darken(@brand-info, 5%);	
-border:1px solid darken(@brand-info, 10%);	
+border:1px solid darken(@brand-info, 10%);
+color: #fff;
 }
 
 .nav-pills>li>a {
