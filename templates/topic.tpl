@@ -150,7 +150,12 @@
 							<!-- ENDIF posts.editor.username -->
 						</span>
 						<span class="pull-left">
-							<!-- IF !reputation:disabled -->[[global:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;<!-- ENDIF !reputation:disabled -->[[global:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user.postcount}</span>&nbsp;|&nbsp;<span>[[groups:details.title]]</span>
+							<!-- IF !reputation:disabled -->[[global:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;<!-- ENDIF !reputation:disabled -->[[global:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user.postcount}</span>&nbsp;|&nbsp;<span class="label group-label inline-block" style="background-color: {posts.user.groups.labelColor};">
+							<!-- IF posts.user.groups.icon -->
+							<i class="fa {posts.user.groups.icon}"></i> 
+							<!-- ENDIF posts.user.groups.icon -->
+							{posts.user.groups.userTitle}
+							</span>
 							<!-- IF posts.user.custom_profile_info.length -->
 								<!-- BEGIN custom_profile_info -->
 								| {posts.user.custom_profile_info.content}
