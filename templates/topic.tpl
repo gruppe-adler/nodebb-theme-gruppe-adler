@@ -150,8 +150,11 @@
 							<!-- ENDIF posts.editor.username -->
 						</span>
 						<span class="pull-left">
-							<!-- IF !reputation:disabled -->[[global:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;<!-- ENDIF !reputation:disabled -->[[global:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user.postcount}</span>&nbsp;|&nbsp;<a href="{relative_path}/groups/{posts.user.groups.name}"><span class="label group-label inline-block" style="background-color: {posts.user.groups.labelColor};"><!-- IF posts.user.groups.icon --><i class="fa {posts.user.groups.icon}"></i> <!-- ENDIF posts.user.groups.icon -->{posts.user.groups.userTitle}</span></a>
-							<!-- IF posts.user.custom_profile_info.length -->
+							<!-- IF !reputation:disabled -->[[global:reputation]]: <i class='fa fa-star'></i> <span data-reputation="{posts.user.reputation}" data-uid="{posts.uid}" class='formatted-number reputation'>{posts.user.reputation}</span>&nbsp;|&nbsp;<!-- ENDIF !reputation:disabled -->[[global:posts]]: <i class='fa fa-pencil'></i> <span class='formatted-number user_postcount_{posts.uid}'>{posts.user.postcount}</span>&nbsp;|&nbsp;
+							<!-- BEGIN groups -->
+							<a href="{relative_path}/groups/{posts.user.groups.name}"><span class="label group-label inline-block" style="background-color: {posts.user.groups.labelColor};"><!-- IF posts.user.groups.icon --><i class="fa {posts.user.groups.icon}"></i> <!-- ENDIF posts.user.groups.icon -->{posts.user.groups.userTitle}</span></a><br/>
+							<!-- END groups -->
+								<!-- IF posts.user.custom_profile_info.length -->
 								<!-- BEGIN custom_profile_info -->
 								| {posts.user.custom_profile_info.content}
 								<!-- END custom_profile_info -->
