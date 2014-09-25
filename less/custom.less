@@ -51,6 +51,22 @@ h4.category-title {
     padding-left: 50px;
 }
 
+.post-row .topic-item, #topics-container .category-item {
+
+	filter: brightness (100%);
+	-webkit-filter: brightness (100%);
+	-webkit-transition: 500ms ease-in-out;
+	-moz-transition: 500ms ease-in-out;
+	-ms-transition: 500ms ease-in-out;
+	-o-transition: 500ms ease-in-out;
+	transition: 500ms ease-in-out;
+}
+
+.post-row .topic-item.highlight, #topics-container .category-item.highlight {
+filter: brightness (110%);
+-webkit-filter: brightness (110%);
+}
+
 .tag-item, .tag-topic-count {
     color: #666;
     border: 1px solid #e9ba6d;
