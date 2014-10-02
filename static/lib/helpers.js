@@ -7,15 +7,29 @@
 		return index % 2 === 1 ? '</div><div class="row">' : '';
 	}
 
-	if ('undefined' !== typeof window) {
-		templates.registerHelper('bsNewRowOnOdd', bsNewRowOnOdd);
+	function _last(fn) {
+		return function (data, index, totalCount) {
+			if (index !== totalCount - 1) {
+				return '<!-- nix ' + index + '/' + totalCount + ' -->';
+			}
+			return '<!-- was -->' + fn.apply(this, arguments);
+		};
 	}
 
-	module.exports = function() {
-		var templates = templates || require('templates.js');
+	function newrelic(data, index, totalCount) {
+		return require('newrelic').getBrowserTimingHeader();
+	}
+
+	module.exports = function(templates) {
+		templates = templates || require('templates.js');
 
 		templates.registerHelper('bsNewRowOnOdd', bsNewRowOnOdd);
+		templates.registerHelper('newrelic', _last(newrelic));
 	};
+
+	if ('undefined' !== typeof window) {
+		module.exports(templates);
+	}
 
 })('undefined' === typeof module ? {
 	module: {
