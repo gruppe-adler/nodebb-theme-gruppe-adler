@@ -17,7 +17,12 @@
 	}
 
 	function newrelic(data, index, totalCount) {
-		return require('newrelic').getBrowserTimingHeader();
+		try {
+			return require('newrelic').getBrowserTimingHeader();
+		} catch (e) {
+			console.warn('newrelic module could not be found');
+			console.warn(e);
+		}
 	}
 
 	module.exports = function(templates) {
