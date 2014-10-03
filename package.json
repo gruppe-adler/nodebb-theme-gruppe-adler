@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-gruppe-adler",
-  "version": "0.0.13",
+  "version": "1.0",
   "description": "Theme for www.gruppe-adler.de",
   "main": "theme.less",
   "repository": {
@@ -15,13 +15,12 @@
   ],
   "contributors": [
     {
-      "name": "Jacob Martin",
-      "email": "jacob@jacobmartin.ca",
-      "url": "https://github.com/jacobmartinca"
+      "name": "Moritz Schmidt",
+      "url": "https://github.com/Fusselwurm"
     }, 
     {
-      "name": "Paaltomo",
-      "url": "https://github.com/Paaltomo"
+      "name": "Nomisum",
+      "url": "https://github.com/nomisum"
     }
   ],
   "license": "BSD-2-Clause",
