@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-gruppe-adler",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Theme for www.gruppe-adler.de",
   "main": "theme.less",
   "repository": {
