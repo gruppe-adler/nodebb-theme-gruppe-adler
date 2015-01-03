@@ -16,20 +16,10 @@
 		};
 	}
 
-	function newrelic(data, index, totalCount) {
-		try {
-			return require('newrelic').getBrowserTimingHeader();
-		} catch (e) {
-			console.warn('newrelic module could not be found');
-			console.warn(e);
-		}
-	}
-
 	module.exports = function(templates) {
 		templates = templates || require('templates.js');
 
 		templates.registerHelper('bsNewRowOnOdd', bsNewRowOnOdd);
-		templates.registerHelper('newrelic', _last(newrelic));
 	};
 
 	if ('undefined' !== typeof window) {

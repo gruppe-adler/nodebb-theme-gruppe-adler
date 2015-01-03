@@ -4,7 +4,6 @@
 	<title>{browserTitle}</title>
 	<!-- BEGIN metaTags -->
 	{function.buildMetaTag}
-	{function.newrelic}
 	<!-- END metaTags -->
 	<link rel="stylesheet" type="text/css" href="{relative_path}/stylesheet.css?{css-buster}" />
 	<!-- IF bootswatchCSS --><link href="{bootswatchCSS}" rel="stylesheet" media="screen"><!-- ENDIF bootswatchCSS -->
