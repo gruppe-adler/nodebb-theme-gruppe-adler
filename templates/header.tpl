@@ -22,7 +22,10 @@
 	<![endif]-->
 
 	<script>
-		var RELATIVE_PATH = "{relative_path}";
+	        var RELATIVE_PATH = "";
+	        var config = JSON.parse('{configJSON}');
+	        var app = {};
+	        app.user = JSON.parse('{userJSON}');
 	</script>
 	<script src="{relative_path}/socket.io/socket.io.js"></script>
 	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
