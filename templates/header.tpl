@@ -4,7 +4,6 @@
 	<title>{browserTitle}</title>
 	<!-- BEGIN metaTags -->
 	{function.buildMetaTag}
-	{function.newrelic}
 	<!-- END metaTags -->
 	<link rel="stylesheet" type="text/css" href="{relative_path}/stylesheet.css?{css-buster}" />
 	<!-- IF bootswatchCSS --><link href="{bootswatchCSS}" rel="stylesheet" media="screen"><!-- ENDIF bootswatchCSS -->
@@ -23,7 +22,10 @@
 	<![endif]-->
 
 	<script>
-		var RELATIVE_PATH = "{relative_path}";
+	        var RELATIVE_PATH = "";
+	        var config = JSON.parse('{configJSON}');
+	        var app = {};
+	        app.user = JSON.parse('{userJSON}');
 	</script>
 	<script src="{relative_path}/socket.io/socket.io.js"></script>
 	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
