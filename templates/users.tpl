@@ -3,10 +3,10 @@
 		<li class=''><a href='{relative_path}/users/online'>[[global:online]]</a></li>
 		<li class=''><a href='{relative_path}/users/latest'>[[users:latest_users]]</a></li>
 		<li class=''><a href='{relative_path}/users/sort-posts'>[[users:top_posters]]</a></li>
-		<li class='user_pill_gastspieler'><a href='{relative_path}/groups/Gastspieler'>Gastspieler</a></li>
-		<li class='user_pill_anwaerter'><a href='{relative_path}/groups/Anwärter'>Anwärter</a></li>
-		<li class='user_pill_adler'><a href='{relative_path}/groups/Adler'>Adler</a></li>
-		<li class='user_pill_fuehrung'><a href='{relative_path}/groups/Führung'>Führung</a></li>
+		<li class='user_pill_gastspieler'><a href='{relative_path}/groups/gastspieler'>Gastspieler</a></li>
+		<li class='user_pill_anwaerter'><a href='{relative_path}/groups/anwärter'>Anwärter</a></li>
+		<li class='user_pill_adler'><a href='{relative_path}/groups/adler'>Adler</a></li>
+		<li class='user_pill_fuehrung'><a href='{relative_path}/groups/führung'>Führung</a></li>
 		<li class=''><a href='{relative_path}/users/search'>[[users:search]]</a></li>
 	</ul>
 
