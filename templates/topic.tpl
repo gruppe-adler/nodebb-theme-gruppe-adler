@@ -178,14 +178,10 @@
 		<!-- IMPORT partials/post_bar.tpl -->
 	</div>
 
-	<!-- IF config.usePagination -->
-	<div class="text-center">
-		<ul class="pagination">
-			<li class="previous pull-left"><a href="#"><i class="fa fa-chevron-left"></i> [[global:previouspage]]</a></li>
-			<li class="next pull-right"><a href="#">[[global:nextpage]] <i class="fa fa-chevron-right"></i></a></li>
-		</ul>
-	</div>
-	<!-- ENDIF config.usePagination -->
+
+        <!-- IF config.usePagination -->
+                <!-- IMPORT partials/paginator.tpl -->
+        <!-- ENDIF config.usePagination -->
 
 	<!-- IMPORT partials/move_thread_modal.tpl -->
 	<!-- IMPORT partials/fork_thread_modal.tpl -->
