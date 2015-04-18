@@ -1,0 +1,17 @@
+{
+    "latest_users": "neuste Benutzer",
+    "top_posters": "meiste Beiträge",
+    "most_reputation": "höchstes Ansehen",
+    "gastspieler": "Gastspieler",
+    "stammspieler": "Stammspieler",
+    "anwärter": "Anwärter",
+    "adler": "Adler",
+    "führung": "Führung",
+    "search": "Suchen",
+    "enter_username": "Benutzer durchsuchen",
+    "load_more": "mehr laden",
+    "users-found-search-took": "%1 Benutzer gefunden! Die Suche dauerte %2 ms.",
+    "filter-by": "Filtern nach",
+    "online-only": "Nur Online",
+    "picture-only": "Nur mit Bildern"
+}
