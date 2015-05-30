@@ -10,49 +10,39 @@
 	<!-- BEGIN linkTags -->
 	<link<!-- IF linkTags.link --> link="{linkTags.link}"<!-- ENDIF linkTags.link --><!-- IF linkTags.rel --> rel="{linkTags.rel}"<!-- ENDIF linkTags.rel --><!-- IF linkTags.type --> type="{linkTags.type}"<!-- ENDIF linkTags.type --><!-- IF linkTags.href --> href="{linkTags.href}"<!-- ENDIF linkTags.href --> />
 	<!-- END linkTags -->
-	<!-- IF useCustomCSS -->
-	<style type="text/css">{customCSS}</style>
-	<!-- ENDIF useCustomCSS -->
 
 	<!--[if lt IE 9]>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-	<script>__lt_ie_9__ = 1;</script>
+  		<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>
+  		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+  		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+  		<script>__lt_ie_9__ = 1;</script>
 	<![endif]-->
 
 	<script>
-	        var RELATIVE_PATH = "";
-	        var config = JSON.parse('{configJSON}');
-	        var app = {};
-	        app.user = JSON.parse('{userJSON}');
+		var RELATIVE_PATH = "{relative_path}";
+		var config = JSON.parse('{{configJSON}}');
+		var app = {
+			template: "{template.name}",
+			user: JSON.parse('{{userJSON}}')
+		};
 	</script>
-	<script src="{relative_path}/socket.io/socket.io.js"></script>
 	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
-	<script>
-		require.config({
-			baseUrl: "{relative_path}/src/modules",
-			waitSeconds: 3,
-			urlArgs: "{cache-buster}",
-			paths: {
-				'forum': '../forum',
-				'vendor': '../../vendor',
-				'buzz': '../../vendor/buzz/buzz.min'
-			}
-		});
-	</script>
+	<!-- IMPORT partials/requirejs-config.tpl -->
 	<!-- IF useCustomJS -->
-	{customJS}
+	{{customJS}}
 	<!-- ENDIF useCustomJS -->
+	<!-- IF useCustomCSS -->
+	<style type="text/css">{{customCSS}}</style>
+	<!-- ENDIF useCustomCSS -->
 </head>
 
 <body>
-<div class="navbar navbar-default navbar-fixed-top header" role="navigation" id="header-menu">
-	<!-- IMPORT partials/fake-header.tpl -->
-	<div class="container">
-		<!-- IMPORT partials/menu.tpl -->
-	</div>
-</div>
+	<div class="navbar navbar-inverse navbar-fixed-top header" role="navigation" id="header-menu">
+		<!-- IMPORT partials/fake-header.tpl -->
 
-<div class="container" id="content">
+		<div class="container">
+			<!-- IMPORT partials/menu.tpl -->
+		</div>
+	</div>
+	<div class="container" id="content">
 	<!-- IMPORT partials/noscript/warning.tpl -->
