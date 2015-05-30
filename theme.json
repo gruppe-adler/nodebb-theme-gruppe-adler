@@ -3,5 +3,5 @@
     "name": "Theme for gruppe-adler.de",
     "description": "aaargs enough with the json files already!",
     "url": "https://www.github.com/gruppe-adler/nodebb-theme-gruppe-adler",
-    "templates": "templates"
+    "baseTheme": "nodebb-theme-persona"
 }
