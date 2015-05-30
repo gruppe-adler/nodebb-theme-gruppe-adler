@@ -1,15 +1,7 @@
 {
 	"id": "nodebb-theme-gruppe-adler",
-	"library": "./lib/theme.js",
-	"hooks": [
-		{
-			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas", "callbacked": true
-		}
-	],
-	"staticDirs": {
-	},
 	"scripts": [
-		"static/lib/classic.js",
-		"static/lib/helpers.js"
+		"../nodebb-theme-persona/lib/persona.js",
+		"../nodebb-theme-persona/lib/modules/nprogress.js"
 	]
 }

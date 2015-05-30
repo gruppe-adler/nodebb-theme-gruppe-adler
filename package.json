@@ -1,6 +1,9 @@
 {
   "name": "nodebb-theme-gruppe-adler",
   "version": "2.0.0",
+  "nbbpm": {
+    "compatibility": "^0.7.0"
+  },
   "description": "Theme for www.gruppe-adler.de",
   "main": "theme.less",
   "repository": {
@@ -17,7 +20,7 @@
     {
       "name": "Moritz Schmidt",
       "url": "https://github.com/Fusselwurm"
-    }, 
+    },
     {
       "name": "Nomisum",
       "url": "https://github.com/nomisum"
@@ -28,6 +31,5 @@
   "maintainers": [
   ],
   "directories": {},
-  "scripts": {},
-  "readme": "ERROR: No README data found!"
+  "scripts": {}
 }
