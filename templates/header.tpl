@@ -37,7 +37,7 @@
 </head>
 
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top header" role="navigation" id="header-menu">
+	<div class="navbar navbar-default navbar-fixed-top header" role="navigation" id="header-menu">
 		<!-- IMPORT partials/fake-header.tpl -->
 
 		<div class="container">
