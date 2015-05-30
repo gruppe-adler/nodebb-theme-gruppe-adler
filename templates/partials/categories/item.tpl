@@ -1,6 +1,6 @@
 <li component="categories/category" data-cid="{../cid}" data-numRecentReplies="1" class="row clearfix">
 	<meta itemprop="name" content="{../name}">
-
+	<a href="{config.relative_path}/category/{../slug}" itemprop="url">
 	<div class="col-md-7 col-sm-9 col-xs-11 content">
 		<div class="icon hidden-sm hidden-xs pull-left" style="{function.generateCategoryBackground}">
 			<i class="fa fa-fw {../icon}"></i>
@@ -11,7 +11,7 @@
 			<small>{../description}</small>
 		</h1>
 	</div>
-
+	</a>
 	<!-- IF !../link -->
 	<div class="col-md-1 hidden-sm hidden-xs stats">
 		<span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span><br />
@@ -21,9 +21,11 @@
 		<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br />
 		<small>[[global:posts]]</small>
 	</div>
-	<div class="col-md-3 col-sm-3 col-xs-1 teaser">
+		<a class="permalink" href="{config.relative_path}/topic/{../topic.slug}<!-- IF ../index -->/{../index}<!-- ENDIF ../index -->">
+				
+		<div class="col-md-3 col-sm-3 col-xs-1 teaser">
 		<!-- IMPORT partials/categories/lastpost.tpl -->
-	</div>
+		</div></a>
 	<!-- ELSE -->
 	<div class="col-md-2 hidden-sm-hidden-xs"></div>
 	<div class="col-md-3 col-sm-3 col-xs-1 teaser">
