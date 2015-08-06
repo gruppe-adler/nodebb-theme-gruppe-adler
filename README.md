@@ -1,1 +1,1 @@
-derives from https://github.com/Paaltomo/nodebb-theme-persona
+derives from https://github.com/NodeBB/nodebb-theme-persona
