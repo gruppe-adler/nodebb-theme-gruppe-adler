@@ -37,13 +37,13 @@
 </head>
 
 <body>
-	<div class="navbar navbar-default navbar-fixed-top header" role="navigation" id="header-menu" style="
+	<nav class="navbar navbar-default navbar-fixed-top header" role="navigation" id="header-menu" component="navbar" style="
             <!-- IF categories.bgColor -->border-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->">
 		<!-- IMPORT partials/fake-header.tpl -->
 
 		<div class="container">
 			<!-- IMPORT partials/menu.tpl -->
 		</div>
-	</div>
-	<div class="container" id="content">
+	</nav>
+	<div class="container" id="content" component="header">
 	<!-- IMPORT partials/noscript/warning.tpl -->

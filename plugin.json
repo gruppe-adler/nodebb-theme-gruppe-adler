@@ -2,6 +2,7 @@
 	"id": "nodebb-theme-gruppe-adler",
 	"scripts": [
 		"../nodebb-theme-persona/lib/persona.js",
-		"../nodebb-theme-persona/lib/modules/nprogress.js"
+		"../nodebb-theme-persona/lib/modules/nprogress.js",
+		"../nodebb-theme-persona/lib/modules/autohidingnavbar.min.js"
 	]
 }
