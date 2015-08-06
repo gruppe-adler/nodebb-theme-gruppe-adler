@@ -1,7 +1,7 @@
 {
     "id": "nodebb-theme-gruppe-adler",
     "name": "Theme for gruppe-adler.de",
-    "description": "aaargs enough with the json files already!",
+    "description": "Theme for forum.gruppe-adler.de . Depends on nodebb-theme-persona-2.0.1",
     "url": "https://www.github.com/gruppe-adler/nodebb-theme-gruppe-adler",
     "baseTheme": "nodebb-theme-persona"
 }
