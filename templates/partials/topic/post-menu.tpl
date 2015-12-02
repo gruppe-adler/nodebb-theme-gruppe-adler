@@ -49,8 +49,8 @@
 				<span class="favourite-text">[[topic:favourite]]</span>
 				<span component="post/favourite-count" class="favouriteCount" data-favourites="{posts.reputation}">{posts.reputation}</span>&nbsp;
 
-				<i component="post/favourite/on" class="fa fa-star <!-- IF !posts.favourited -->hidden<!-- ENDIF !posts.favourited -->"></i>
-				<i component="post/favourite/off" class="fa fa-star-o <!-- IF posts.favourited -->hidden<!-- ENDIF posts.favourited -->"></i>
+				<i component="post/favourite/on" class="fa fa-bookmark <!-- IF !posts.favourited -->hidden<!-- ENDIF !posts.favourited -->"></i>
+				<i component="post/favourite/off" class="fa fa-bookmark-o <!-- IF posts.favourited -->hidden<!-- ENDIF posts.favourited -->"></i>
 			</a>
 		</li>
 
