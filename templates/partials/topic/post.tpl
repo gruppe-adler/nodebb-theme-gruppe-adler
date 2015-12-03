@@ -44,7 +44,6 @@
 			<a component="post/downvote" href="#" class="<!-- IF posts.downvoted -->downvoted<!-- ENDIF posts.downvoted -->">
 				<i class="fa fa-bomb"></i>
 			</a>
-			<span component="post/downvote-count" data-votes="{posts.downvotes}">{posts.downvotes}</span>
 			<!-- ENDIF !downvote:disabled -->
 			<!-- ENDIF !reputation:disabled -->
 		</div>
