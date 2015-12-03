@@ -35,7 +35,7 @@
 		</div>
 		<div class="votes">
 			<!-- IF !reputation:disabled -->
-			<a component="post/upvote" href="#" class="upvoted">
+			<a component="post/upvote" href="#" class="<!-- IF posts.voted -->upvoted<!-- ENDIF posts.voted -->">
 				<i class="fa fa-heart"></i>
 			</a>
 			<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
