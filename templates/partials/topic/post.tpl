@@ -40,10 +40,11 @@
 			</a>
 			<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
 			<!-- IF !downvote:disabled -->
+			<br><br>
 			<a component="post/downvote" href="#" class="<!-- IF posts.downvoted -->downvoted<!-- ENDIF posts.downvoted -->">
 				<i class="fa fa-bomb"></i>
 			</a>
-			<span component="post/vote-count" data-votes="{posts.downvotes}">{posts.downvotes}</span>
+			<span component="post/downvote-count" data-votes="{posts.downvotes}">{posts.downvotes}</span>
 			<!-- ENDIF !downvote:disabled -->
 			<!-- ENDIF !reputation:disabled -->
 		</div>
