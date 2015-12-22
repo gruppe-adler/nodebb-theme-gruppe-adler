@@ -163,6 +163,9 @@ div [data-slug="führung"] h3 {
       margin-top:0px;
       padding-top: 4px;
   }
+  .topic .moderator-tools {
+      float: right;
+  }
   
   .category>ul>li {
   margin-bottom: 0;
