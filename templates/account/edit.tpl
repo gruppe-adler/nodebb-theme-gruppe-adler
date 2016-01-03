@@ -86,6 +86,8 @@
 						</div>
 						<!-- ENDIF !disableSignatures -->
 
+						<!-- IMPORT partials/account_custom_attributes.tpl -->
+
 						<input type="hidden" id="inputUID" value="{uid}"><br />
 
 						<div class="form-actions">
