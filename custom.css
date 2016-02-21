@@ -143,13 +143,9 @@ div [data-slug="führung"] h3 {
   margin-right: 15px;
   min-width: 46px;
   min-height: 46px;
-  margin-top: -2px;
 }
 
-
-
-
- @media (max-width: 500px) {
+@media (max-width: 500px) {
    .categories> li   {
   margin-bottom: 0px;
   min-height: 53px;
