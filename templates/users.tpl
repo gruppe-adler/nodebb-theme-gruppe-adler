@@ -10,10 +10,6 @@
                 <li class='user_pill_anwaerter'><a href='{config.relative_path}/groups/anwärter'>Anwärter</a></li>
                 <li class='user_pill_adler'><a href='{config.relative_path}/groups/adler'>Adler</a></li>
                 <li class='user_pill_fuehrung'><a href='{config.relative_path}/groups/führung'>Führung</a></li>
- 
-		<!-- IF loggedIn -->
-		<li class=''><a href='{config.relative_path}/users/search'>[[users:search]]</a></li>
-		<!-- ENDIF loggedIn -->
 	</ul>
 
 	<br />
