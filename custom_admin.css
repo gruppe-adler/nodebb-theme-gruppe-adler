@@ -1,5 +1,46 @@
+@media (max-width: 1280px) { 
+  .topic-main-buttons .stats {
+    display: none;
+  }
+}
+@media (max-width: 1280px) { 
+  [component="topic/watch"] .visible-lg-inline, [component="topic/mark-unread"] .visible-lg-inline {
+    display: none !important;
+  }
+  .stats-attendance {
+    display: inline-block;
+  }
+}
+
+[component="topic/attendance"] {
+    background-color: #f9f9f9;
+}
+
 body {
     background-color: #e0e0e0;
+}
+
+.navbar-default {
+    border: none;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.widget-stats .forums-stats {
+    display: none;   
+}
+
+.widget-stats .list-title {
+    margin: 0px;
+    margin-top: 15px;
+    text-align:center;
+}
+
+.widget-stats .users-online {
+    text-align:center;
+}
+
+.widget-stats .users-today {
+    text-align:center;
 }
 
 .nav-pills>li>a {
@@ -139,7 +180,6 @@ div [data-slug="führung"] h3 {
 .category>ul>li {
   margin-bottom: 0px; 
   min-height: 53px;
-  box-shadow: 0px 1px 0px #f0f0f0;
   padding: 10px 0px 10px 0px;
  }
  
@@ -176,7 +216,6 @@ div [data-slug="führung"] h3 {
   .category>ul>li {
   margin-bottom: 0;
   min-height: 53px;
-  box-shadow: none;
   padding: 10px 0 10px 0;
   background-color: #fff;
   border-bottom: #f0f0f0 solid 1px;
@@ -189,6 +228,11 @@ div [data-slug="führung"] h3 {
       list-style-type: none;
   padding: 10px;
   background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.categories >li, .category > ul > li {
+     box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
 }
 
 .categories>li .content .icon, .category>ul>li .content .icon {
@@ -220,7 +264,6 @@ div [data-slug="führung"] h3 {
   .category>ul>li {
   margin-bottom: 0;
   min-height: 53px;
-  box-shadow: none;
   padding: 0px 0 10px 0;
   background-color: #fff;
   border-bottom: #f0f0f0 solid 1px;
@@ -292,6 +335,7 @@ td, th {
     font-size: 4px;
     padding-right: 10px;*/
      float: right;
+      display: none;
 }
 
 .category-children a small{
@@ -305,7 +349,27 @@ td, th {
    
 }
 
+.category-children span i:hover {
+    background-color: #fff !important;
+    color: #767676 !important;
+   
+}
+
 .categories>li .category-children .fa-stack, .category>ul>li .category-children .fa-stack {
     display: inline-block;
 }
 
+.category h2.title .description, .categories h2.title .description, .subcategory h2.title .description {
+    line-height:1.2;
+}
+
+.fake-hauptmenu-item a img {
+margin: 0px 10px;
+display: inline-block;
+margin-bottom: 4px;
+}
+
+.fake-hauptmenu-item-active, .fake-hauptmenu-item {
+    padding: 0px;
+    line-height: 32px;
+}
