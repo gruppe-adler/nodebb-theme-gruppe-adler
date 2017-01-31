@@ -12,9 +12,35 @@
   }
 }
 
-[component="topic/attendance"] {
-    background-color: #f9f9f9;
+.category hr {
+    border-top: 1px solid rgba(0,0,0,0.05);
+border-bottom: 1px solid rgba(255,255,255,0.1);
 }
+
+.left_mask {
+    display: none;
+}
+
+.right_mask {
+    display: none;
+}
+
+[component="topic/attendance"] .main-table tr .secondColumn ul {
+    overflow: auto !important;
+    height: 100% !important;
+    
+}
+
+.header .forum-logo {
+    max-height:63px;
+    position: absolute;
+}
+
+#main-nav {
+    margin-left: 60px;
+}
+
+
 
 body {
     background-color: #e0e0e0;
@@ -120,28 +146,22 @@ div [data-action="leave"] {
 
 
 @media screen and (max-width: 600px) {
+    
+   /* remove space intensive first column */
+  [component="topic/attendance"] .main-table tr {
+     display: block;
+  }
+
+  /* remove space intensive first column */
+  [component="topic/attendance"] .main-table tr .firstColumn {
+    display: block;
+  }
+  
   #fake-header {
     visibility: hidden;
     clear: both;
     display: none;
   }
-}
-
-div [data-slug="blufor-r1"] {
-    display: none;
-}
-
-div [data-slug="blufor-r2"] {
-    display: none;
-}
-
-div [data-slug="opfor-r1"] {
-    display: none;
-    
-}
-
-div [data-slug="opfor-r2"] {
-    display: none;
 }
 
 div [data-slug="adler"] h3 {
@@ -373,3 +393,16 @@ margin-bottom: 4px;
     padding: 0px;
     line-height: 32px;
 }
+
+@media (max-width: 600px) { 
+
+[component="topic/mark-unread"] {
+    display: none;
+  }
+  
+  [component="topic/watch"] {
+    display: none;
+  }
+
+}
+
