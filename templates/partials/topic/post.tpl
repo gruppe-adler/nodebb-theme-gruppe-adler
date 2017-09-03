@@ -27,8 +27,7 @@
 
 			<i class="fa fa-pencil-square pointer edit-icon <!-- IF !posts.editor.username -->hidden<!-- ENDIF !posts.editor.username -->"></i>
 
-			<small data-editor="{posts.editor.userslug}" component="post/editor" class="hidden">[[global:last_edited_by, <strong>{posts.editor.username}</strong>, <span class="timeago" title="{posts.posts.timestampISO}"></span>]]</small>
-
+			<small data-editor="{posts.editor.userslug}" component="post/editor" class="hidden">[[global:last_edited_by, {posts.editor.username}]] <span class="timeago" title="{posts.timestampISO}"></span></small>
 
 			<!-- IF posts.toPid -->
 			<button component="post/parent" class="btn btn-xs btn-default hidden-xs" data-topid="{posts.toPid}"><i class="fa fa-reply"></i> @{posts.parent.username}</button>
