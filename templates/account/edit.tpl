@@ -7,9 +7,9 @@
 					<div class="row">
 						<div class="col-xs-12 hidden-xs">
 							<!-- IF picture -->
-							<img id="user-current-picture" class="avatar avatar-lg avatar-rounded" src="{picture}" />
+							<img id="user-current-picture" class="avatar avatar-xl avatar-rounded" src="{picture}" />
 							<!-- ELSE -->
-							<div class="avatar avatar-lg avatar-rounded" style="background-color: {icon:bgColor};">{icon:text}</div>
+							<div class="avatar avatar-xl avatar-rounded" style="background-color: {icon:bgColor};">{icon:text}</div>
 							<!-- ENDIF picture -->
 						</div>
 					</div>
@@ -18,8 +18,15 @@
 						<!-- IF !username:disableEdit -->
 						<a href="{config.relative_path}/user/{userslug}/edit/username" class="list-group-item">[[user:change_username]]</a>
 						<!-- ENDIF !username:disableEdit -->
+						<!-- IF !email:disableEdit -->
 						<a href="{config.relative_path}/user/{userslug}/edit/email" class="list-group-item">[[user:change_email]]</a>
+						<!-- ENDIF !email:disableEdit -->
+						<!-- IF canChangePassword -->
 						<a href="{config.relative_path}/user/{userslug}/edit/password" class="list-group-item">[[user:change_password]]</a>
+						<!-- ENDIF canChangePassword -->
+						<!-- BEGIN editButtons -->
+						<a href="{config.relative_path}{editButtons.link}" class="list-group-item">{editButtons.text}</a>
+						<!-- END editButtons -->
 					</ul>
 
 					<!-- IF config.requireEmailConfirmation -->
@@ -30,11 +37,11 @@
 					<!-- ENDIF email -->
 					<!-- ENDIF config.requireEmailConfirmation -->
 
-					<!-- IF config.allowAccountDelete -->
+					<!-- IF allowAccountDelete -->
 					<!-- IF isSelf -->
 					<a id="deleteAccountBtn" href="#" class="btn btn-danger">[[user:delete_account]]</a><br/><br/>
 					<!-- ENDIF isSelf -->
-					<!-- ENDIF config.allowAccountDelete -->
+					<!-- ENDIF allowAccountDelete -->
 
 				</div>
 			</div>
@@ -68,6 +75,20 @@
 							<label class="control-label" for="inputBirthday">[[user:birthday]]</label>
 							<div class="controls">
 								<input class="form-control" id="inputBirthday" value="{birthday}" placeholder="mm/dd/yyyy">
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="grouptitle">[[user:grouptitle]]</label>
+							<div class="controls">
+								<select class="form-control" id="groupTitle" data-property="groupTitle">
+									<option value="">[[user:no-group-title]]</option>
+									<!-- BEGIN groups -->
+									<!-- IF groups.userTitleEnabled -->
+									<option value="{groups.name}" <!-- IF groups.selected -->selected<!-- ENDIF groups.selected -->>{groups.userTitle}</option>
+									<!-- ENDIF groups.userTitleEnabled -->
+									<!-- END groups -->
+								</select>
 							</div>
 						</div>
 
@@ -115,6 +136,6 @@
 			</div>
 			<!-- ENDIF sso.length -->
 		</div>
-	<!-- IF sso.length --></div><!-- ENDIF sso.length -->
+		<!-- IF sso.length --></div><!-- ENDIF sso.length -->
 </div>
 
