@@ -1,29 +1,6 @@
 {
-  "_from": "nodebb-theme-persona@8.0.9",
-  "_id": "nodebb-theme-persona@8.0.9",
-  "_inBundle": false,
-  "_integrity": "sha512-NYadkJZambHXlLFmA3F2xpAs5LUTWuXN58i9LfivgGp0balJPWmjEwiMcs0QTvApwvc3SjQ5DONHO63oTIBZAQ==",
-  "_location": "/nodebb-theme-persona",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "nodebb-theme-persona@8.0.9",
-    "name": "nodebb-theme-persona",
-    "escapedName": "nodebb-theme-persona",
-    "rawSpec": "8.0.9",
-    "saveSpec": null,
-    "fetchSpec": "8.0.9"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/nodebb-theme-persona/-/nodebb-theme-persona-8.0.9.tgz",
-  "_shasum": "8c7824636599965c991c961ff43a89c881fd3388",
-  "_spec": "nodebb-theme-persona@8.0.9",
-  "_where": "D:\\Programming\\NodeBB",
   "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-theme-persona/issues"
+    "url": "https://github.com/gruppe-adler/nodebb-theme-gruppe-adler/issues"
   },
   "bundleDependencies": false,
   "contributors": [
@@ -41,6 +18,18 @@
       "name": "Barış Soner Uşaklı",
       "email": "baris@designcreateplay.com",
       "url": "https://github.com/barisusakli"
+    },
+    {
+      "name": "Moritz Schmidt",
+      "url": "https://github.com/Fusselwurm"
+    },
+    {
+      "name": "Nomisum",
+      "url": "https://github.com/nomisum"
+    },
+    {
+      "name": "Christian Klemm",
+      "url": "https://github.com/chris579"
     }
   ],
   "dependencies": {
@@ -48,24 +37,24 @@
     "striptags": "^3.1.1"
   },
   "deprecated": false,
-  "description": "Persona theme for NodeBB",
-  "homepage": "https://github.com/psychobunny/nodebb-theme-persona#readme",
+  "description": "Gruppe Adler Theme for NodeBB based on Persona 8.0.10",
+  "homepage": "https://forum.gruppe-adler.de",
   "keywords": [
     "nodebb",
     "theme",
-    "forum",
-    "bootstrap",
-    "responsive"
+    "gruppe",
+    "adler",
+    "gruppe-adler"
   ],
   "license": "BSD-2-Clause",
   "main": "theme.less",
-  "name": "nodebb-theme-persona",
+  "name": "nodebb-theme-gruppe-adler",
   "nbbpm": {
     "compatibility": "^1.8.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/psychobunny/nodebb-theme-persona.git"
+    "url": "git+https://github.com/gruppe-adler/nodebb-theme-gruppe-adler.git"
   },
-  "version": "8.0.9"
+  "version": "3.0.0"
 }
