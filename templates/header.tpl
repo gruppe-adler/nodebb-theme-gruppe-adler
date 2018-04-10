@@ -71,6 +71,7 @@
 	</nav>
 
 	<main id="panel" class="slideout-panel">
+        <!-- IMPORT partials/fake-header.tpl -->
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
 			<div class="container">
 				<!-- IMPORT partials/menu.tpl -->

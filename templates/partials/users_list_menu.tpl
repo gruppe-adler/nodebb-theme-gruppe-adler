@@ -8,4 +8,10 @@
 	<li><a href="{config.relative_path}/users?section=flagged">[[users:most_flags]]</a></li>
 	<li><a href="{config.relative_path}/users?section=banned">[[user:banned]]</a></li>
 	<!-- ENDIF isAdminOrGlobalMod -->
+
+    <li class='user_pill_gastspieler'><a href='{config.relative_path}/groups/gastspieler'>Gastspieler</a></li>
+    <li class='user_pill_gastspieler'><a href='{config.relative_path}/groups/stammspieler'>Stammspieler</a></li>
+    <li class='user_pill_anwaerter'><a href='{config.relative_path}/groups/anwärter'>Anwärter</a></li>
+    <li class='user_pill_adler'><a href='{config.relative_path}/groups/adler'>Adler</a></li>
+    <li class='user_pill_fuehrung'><a href='{config.relative_path}/groups/führung'>Führung</a></li>
 </ul>

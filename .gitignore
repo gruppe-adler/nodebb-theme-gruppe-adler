@@ -13,3 +13,5 @@ gen### VisualStudioCode template
 !.vscode/launch.json
 !.vscode/extensions.json
 
+node_modules/*
+
