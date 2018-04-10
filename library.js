@@ -118,10 +118,16 @@ library.addUserToTopic = function(data, callback) {
 };
 
 library.getLinkTags = function (data, callback) {
+	// TODO: remove roboto
 	data.links.push({
 		rel: 'prefetch stylesheet',
 		type: '',
 		href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
+	});
+	data.links.push({
+		rel: 'prefetch stylesheet',
+		type: '',
+		href: 'https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro',
 	});
 
 	callback(null, data);
