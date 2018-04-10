@@ -1,4 +1,11 @@
 .users {
+    .row {
+        @media (min-width: 1200px) {
+          .list-menu {
+            width: 75%;
+          }
+        }
+    }
 
 	&.admin {
 		#users-container {
@@ -26,6 +33,72 @@
 			}
 		}
 	}
+
+    .nav-pills {
+        .user_pill_gastspieler a{
+          color: #fff;
+          background-color: #6a6;
+        }
+
+        .user_pill_fuehrung a{
+          color: #fff;
+          background-color: #8f1167;
+        }
+
+        .user_pill_adler a{
+          color: #fff;
+          background-color: #D18D1F;
+        }
+
+        .user_pill_anwaerter a{
+          color: #fff;
+          background-color: #6caacc;
+        }
+        /*
+        .user_pill_gastspieler a:hover{
+          color: #555 !important;
+          background-color: #6a6;
+        }
+
+        .user_pill_fuehrung a:hover{
+          color: #555 !important;
+          background-color: #8f1167;
+        }
+
+        .user_pill_adler a:hover{
+          color: #555 !important;
+          background-color: #D18D1F;
+        }
+
+        .user_pill_anwaerter a:hover{
+          color: #555 !important;
+          background-color: #6caacc;
+        }*/
+
+        > li > a {
+          border-radius: 100px;
+          color: #555;
+          margin-right: 10px;
+
+          &.btn-active, &:active {
+            box-shadow: none;
+            background-color: #D18D1F;
+            color: #fff;
+          }
+
+          &:hover, &:focus {
+            background-color: @nav-link-hover-bg;
+            color: #555;
+          }
+        }
+    }
+
+    .search {
+      margin-top: 1rem;
+      @media (min-width: 1200px) {
+        margin-top: 0;
+      }
+    }
 }
 
 .users-container {
