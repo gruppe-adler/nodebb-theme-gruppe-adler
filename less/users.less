@@ -75,20 +75,29 @@
           background-color: #6caacc;
         }*/
 
-        > li > a {
-          border-radius: 100px;
-          color: #555;
-          margin-right: 10px;
+        > li {
+          margin-top: 5px;
 
-          &.btn-active, &:active {
-            box-shadow: none;
-            background-color: #D18D1F;
-            color: #fff;
+          a {
+            border-radius: 100px;
+            color: #555;
+            margin-right: 10px;
+            transition: all 0.2s ease;
+          }
+
+          &.active, &:active {
+            a {
+              box-shadow: none;
+              background-color: #D18D1F;
+              color: #fff;
+            }
           }
 
           &:hover, &:focus {
-            background-color: @nav-link-hover-bg;
-            color: #555;
+            a {
+              background-color: @nav-link-hover-bg;
+              color: #555;
+            }
           }
         }
     }
