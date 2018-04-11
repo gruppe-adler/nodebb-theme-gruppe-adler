@@ -56,5 +56,13 @@
     "type": "git",
     "url": "git+https://github.com/gruppe-adler/nodebb-theme-gruppe-adler.git"
   },
-  "version": "3.0.1"
+  "scripts": {
+    "release:patch": "release-it -n",
+    "release:minor": "release-it minor -n",
+    "release:major": "release-it major -n"
+  },
+  "version": "3.0.1",
+  "devDependencies": {
+    "release-it": "^7.3.0"
+  }
 }
