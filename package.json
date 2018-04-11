@@ -61,7 +61,7 @@
     "release:minor": "release-it minor -n",
     "release:major": "release-it major -n"
   },
-  "version": "3.1.0",
+  "version": "3.1.1",
   "devDependencies": {
     "release-it": "^7.3.0"
   }
