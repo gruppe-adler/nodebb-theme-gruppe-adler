@@ -1,6 +1,6 @@
 {
 	"id": "nodebb-theme-gruppe-adler",
-	"library": "../nodebb-theme-persona/library.js",
+	"library": "library.js",
 	"hooks": [
 		{ "hook": "filter:teasers.get", "method": "getTeasers" },
 		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
@@ -20,6 +20,6 @@
 		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
 	},
 	"acpScripts": [
-		"../nodebb-theme-persona/lib/admin.js"
+		"lib/admin.js"
 	]
 }

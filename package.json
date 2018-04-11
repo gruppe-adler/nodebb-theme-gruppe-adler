@@ -1,22 +1,24 @@
 {
-  "name": "nodebb-theme-gruppe-adler",
-  "version": "2.2.0",
-  "nbbpm": {
-    "compatibility": "^1.5.0"
+  "bugs": {
+    "url": "https://github.com/gruppe-adler/nodebb-theme-gruppe-adler/issues"
   },
-  "description": "Theme for www.gruppe-adler.de",
-  "main": "theme.less",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gruppe-adler/nodebb-theme-gruppe-adler"
-  },
-  "keywords": [
-    "nodebb",
-    "theme",
-    "themes",
-    "classic"
-  ],
+  "bundleDependencies": false,
   "contributors": [
+    {
+      "name": "Andrew Rodrigues",
+      "email": "andrew@designcreateplay.com",
+      "url": "https://github.com/psychobunny"
+    },
+    {
+      "name": "Julian Lam",
+      "email": "julian@designcreateplay.com",
+      "url": "https://github.com/julianlam"
+    },
+    {
+      "name": "Barış Soner Uşaklı",
+      "email": "baris@designcreateplay.com",
+      "url": "https://github.com/barisusakli"
+    },
     {
       "name": "Moritz Schmidt",
       "url": "https://github.com/Fusselwurm"
@@ -24,12 +26,43 @@
     {
       "name": "Nomisum",
       "url": "https://github.com/nomisum"
+    },
+    {
+      "name": "Christian Klemm",
+      "url": "https://github.com/chris579"
     }
   ],
-  "license": "BSD-2-Clause",
-  "homepage": "https://github.com/gruppe-adler/nodebb-theme-gruppe-adler",
-  "maintainers": [
+  "dependencies": {
+    "pulling": "^1.1.2",
+    "striptags": "^3.1.1"
+  },
+  "deprecated": false,
+  "description": "Gruppe Adler Theme for NodeBB based on Persona 8.0.10",
+  "homepage": "https://forum.gruppe-adler.de",
+  "keywords": [
+    "nodebb",
+    "theme",
+    "gruppe",
+    "adler",
+    "gruppe-adler"
   ],
-  "directories": {},
-  "scripts": {}
+  "license": "BSD-2-Clause",
+  "main": "theme.less",
+  "name": "nodebb-theme-gruppe-adler",
+  "nbbpm": {
+    "compatibility": "^1.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gruppe-adler/nodebb-theme-gruppe-adler.git"
+  },
+  "scripts": {
+    "release:patch": "release-it -n",
+    "release:minor": "release-it minor -n",
+    "release:major": "release-it major -n"
+  },
+  "version": "3.0.2",
+  "devDependencies": {
+    "release-it": "^7.3.0"
+  }
 }

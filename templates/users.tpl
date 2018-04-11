@@ -1,29 +1,14 @@
+<!-- IMPORT partials/breadcrumbs.tpl -->
 <div widget-area="header">
 	<!-- BEGIN widgets.header -->
 	{{widgets.header.html}}
 	<!-- END widgets.header -->
 </div>
 <div class="users">
-	<ul class="nav nav-pills">
-		<li class=''><a href='{config.relative_path}/users/online'>[[global:online]]</a></li>
-		<li class=''><a href='{config.relative_path}/users/sort-joindate'>[[users:latest_users]]</a></li>
-		<li class=''><a href='{config.relative_path}/users/sort-posts'>[[users:top_posters]]</a></li>
-		<li class=''><a href='{config.relative_path}/users/sort-reputation'>[[users:most_reputation]]</a></li>
-
-		<li class='user_pill_gastspieler'><a href='{config.relative_path}/groups/gastspieler'>Gastspieler</a></li>
-		<li class='user_pill_gastspieler'><a href='{config.relative_path}/groups/stammspieler'>Stammspieler</a></li>
-		<li class='user_pill_anwaerter'><a href='{config.relative_path}/groups/anwärter'>Anwärter</a></li>
-		<li class='user_pill_adler'><a href='{config.relative_path}/groups/adler'>Adler</a></li>
-		<li class='user_pill_fuehrung'><a href='{config.relative_path}/groups/führung'>Führung</a></li>
-	</ul>
-
-	<br />
-
 	<div class="row">
-
-
-
-
+		<div class="col-lg-6 list-menu">
+		<!-- IMPORT partials/users_list_menu.tpl -->
+		</div>
 		<div class="col-xs-3 text-right">
 			<!-- IF inviteOnly -->
 			<!-- IF loggedIn -->

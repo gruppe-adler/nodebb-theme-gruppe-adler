@@ -56,13 +56,14 @@
 								<input class="form-control" type="text" id="inputFullname" placeholder="[[user:fullname]]" value="{fullname}">
 							</div>
 						</div>
-
+						<!-- IF allowWebsite -->
 						<div class="control-group">
 							<label class="control-label" for="inputWebsite">[[user:website]]</label>
 							<div class="controls">
 								<input class="form-control" type="text" id="inputWebsite" placeholder="http://..." value="{website}">
 							</div>
 						</div>
+						<!-- ENDIF allowWebsite -->
 
 						<div class="control-group">
 							<label class="control-label" for="inputLocation">[[user:location]]</label>
@@ -92,12 +93,16 @@
 							</div>
 						</div>
 
+						<!-- IF allowAboutMe -->
 						<div class="control-group">
 							<label class="control-label" for="inputAboutMe">[[user:aboutme]]</label> <small><label id="aboutMeCharCountLeft"></label></small>
 							<div class="controls">
 								<textarea class="form-control" id="inputAboutMe" rows="5">{aboutme}</textarea>
 							</div>
 						</div>
+						<!-- ENDIF allowAboutMe -->
+
+						<!-- IF allowSignature -->
 						<!-- IF !disableSignatures -->
 						<div class="control-group">
 							<label class="control-label" for="inputSignature">[[user:signature]]</label> <small><label id="signatureCharCountLeft"></label></small>
@@ -106,8 +111,21 @@
 							</div>
 						</div>
 						<!-- ENDIF !disableSignatures -->
+						<!-- ENDIF allowSignature -->
 
-						<!-- IMPORT partials/account_custom_attributes.tpl -->
+                        <div class="control-group">
+                            <label class="control-label" for="inputSteam64id">Steam64ID</label>
+                            <div class="controls">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    id="inputSteam64id"
+                                    placeholder="12345678901234567"
+                                    value="<!-- IF steam64id -->{steam64id}<!-- ELSE -->{steamid}<!-- ENDIF steam64id -->"
+                                    pattern="[0-9]{17}"
+                                />
+                            </div>
+                        </div>
 
 						<input type="hidden" id="inputUID" value="{uid}"><br />
 
@@ -126,16 +144,21 @@
 				<label class="control-label">[[user:sso.title]]</label>
 				<div class="list-group">
 					<!-- BEGIN sso -->
-					<a class="list-group-item" href="{../url}" target="<!-- IF ../associated -->_blank<!-- ELSE -->_top<!-- ENDIF ../associated -->">
-						<!-- IF ../icon --><i class="fa {../icon}"></i><!-- ENDIF ../icon -->
-						<!-- IF ../associated -->[[user:sso.associated]]<!-- ELSE -->[[user:sso.not-associated]]<!-- ENDIF ../associated -->
-						{../name}
-					</a>
+					<div class="list-group-item">
+						<!-- IF ../deauthUrl -->
+						<a class="btn btn-default btn-xs pull-right" href="{../deauthUrl}">[[user:sso.dissociate]]</a>
+						<!-- END -->
+						<a href="{../url}" target="<!-- IF ../associated -->_blank<!-- ELSE -->_top<!-- ENDIF ../associated -->">
+							<!-- IF ../icon --><i class="fa {../icon}"></i><!-- ENDIF ../icon -->
+							<!-- IF ../associated -->[[user:sso.associated]]<!-- ELSE -->[[user:sso.not-associated]]<!-- ENDIF ../associated -->
+							{../name}
+						</a>
+					</div>
 					<!-- END sso -->
 				</div>
 			</div>
 			<!-- ENDIF sso.length -->
 		</div>
-		<!-- IF sso.length --></div><!-- ENDIF sso.length -->
+	<!-- IF sso.length --></div><!-- ENDIF sso.length -->
 </div>
 
