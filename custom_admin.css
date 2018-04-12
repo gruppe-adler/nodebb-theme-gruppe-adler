@@ -1,7 +1,3 @@
-div [data-slug="administrators"], .groups .row:first-child {
-    display: none;
-}
-
 /* events marker left side */
 [data-relative-time="future"]  {
     border-left: 5px solid #96d11f;
@@ -45,24 +41,3 @@ div [data-slug="administrators"], .groups .row:first-child {
 .arma3-slotting-button-add-match .slotting-text::after {
     content: "\00a0 +" !important;
   }
-
-
-/* styles nav pills for event filter */
-.nav-pills .btn {
-    background-color: rgba(0,0,0,0.1);
-    padding: 5px 20px;
-    top: 10px;
-}
-.nav-pills .btn.active {
-    box-shadow: none;
-    background-color: #333;
-    color: #fff;
-    padding: 5px 20px;
-    top: 10px;
-}
-
-.nav-pills>li>a {
-  border-radius: 100px;
-  color: #555;
-  margin-right: 10px;
-}
