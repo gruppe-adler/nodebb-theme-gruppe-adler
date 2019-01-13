@@ -20,6 +20,20 @@
   @media (min-width: @grid-float-breakpoint) {
     border-radius: @navbar-border-radius;
   }
+
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    @media (min-width: @screen-sm-min) {
+      width: @container-sm;
+    }
+    @media (min-width: @screen-md-min) {
+      width: @container-md;
+    }
+    @media (min-width: @screen-lg-min) {
+      width: @container-lg;
+    }
+  }
 }
 
 
@@ -150,6 +164,9 @@
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
+  @media (min-width: @grid-float-breakpoint) {
+    top: 3.2rem;
+  }
 }
 .navbar-fixed-bottom {
   bottom: 0;
@@ -221,6 +238,13 @@
   @media (min-width: @grid-float-breakpoint) {
     display: none;
   }
+  &#mobile-chats {
+    margin-right: 5px;
+  }
+  &#mobile-menu {
+    margin-right: 15px;
+  }
+
 }
 
 

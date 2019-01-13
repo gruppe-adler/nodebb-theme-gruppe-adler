@@ -153,11 +153,12 @@
 		float: left;
 		max-height: 50px;
 		width: auto;
+		padding: 3px;
 	}
 
 	@media (max-width: @screen-xs-max) {
 		.forum-logo {
-			margin-left: 15px;
+			margin-left: 25px;
 		}
 	}
 
@@ -407,5 +408,26 @@ label.dropdown-toggle {
 html[data-dir="rtl"] {
 	.dropdown-menu > li > form > button {
 		text-align: right;
+	}
+}
+
+#mobile-menu:focus i.fa-bars {
+	-webkit-animation: fa-spin 2s infinite linear;
+	animation: fa-spin 2s infinite linear;
+
+	&::before {
+		font-family: "FontAwesome";
+		content: "\f110";
+	}
+}
+
+@keyframes fa-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
 	}
 }

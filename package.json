@@ -1,14 +1,14 @@
 {
-  "name": "nodebb-theme-persona",
+  "name": "nodebb-theme-gruppe-adler",
   "version": "11.4.4",
   "nbbpm": {
-    "compatibility": "^1.18.0"
+    "compatibility": "^1.19.0"
   },
-  "description": "Persona theme for NodeBB",
+  "description": "Gruppe Adler theme for NodeBB (based on Persona 11.4.4)",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NodeBB/nodebb-theme-persona"
+    "url": "https://github.com/gruppe-adler/nodebb-theme-gruppe-adler"
   },
   "scripts": {
     "lint": "eslint ."
@@ -35,11 +35,23 @@
       "name": "Barış Soner Uşaklı",
       "email": "baris@nodebb.org",
       "url": "https://github.com/barisusakli"
+    },
+    {
+      "name": "Moritz Schmidt",
+      "url": "https://github.com/Fusselwurm"
+    },
+    {
+      "name": "Nomisum",
+      "url": "https://github.com/nomisum"
+    },
+    {
+      "name": "Christian Klemm",
+      "url": "https://github.com/chris579"
     }
   ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/NodeBB/nodebb-theme-persona/issues"
+    "url": "https://github.com/gruppe-adler/nodebb-theme-gruppe-adler/issues"
   },
   "dependencies": {
     "pulling": "^2.0.0",
