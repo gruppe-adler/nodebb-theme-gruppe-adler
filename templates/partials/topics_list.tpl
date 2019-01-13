@@ -7,8 +7,8 @@
 		<meta itemprop="position" content="{../index}" />
 		<a id="{../index}" data-index="{../index}" component="topic/anchor"></a>
 
-		<div class="col-md-6 col-sm-9 col-xs-10 content">
-			<div class="avatar pull-left">
+		<div class="col-md-7 col-sm-9 col-xs-10 content">
+			<div class="avatar pull-left" title="{topics.user.username}">
 				<!-- IF showSelect -->
 				<div class="select" component="topic/select">
 					{{{ if ./thumbs.length }}}
