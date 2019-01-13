@@ -157,9 +157,15 @@
 		color: @gray-light;
 		display: inline-block;
 		padding: 1rem;
+		font-size: 18px;
+		transition: all 0.2s ease;
 
 		&:focus {
 				text-decoration: none;
+		}
+		&:hover {
+			color: #8f1167;
+			transition: all 0.2s ease;
 		}
 	}
 
@@ -173,9 +179,24 @@
 		border: 1px solid @brand-warning;
 	}
 
+	.fa-heart {
+	    vertical-align: -2px;
+	}
+
 	[component="post/vote-count"] {
 		display: inline-block;
-		padding: 1rem 0.5rem;
+	    width: 18px;
+		height: 18px;
+		padding: 0.25rem 0.5rem;
+	    font-size: 100%;
+	    cursor: pointer;
+	    background-color: rgba(0,0,0,0.05);
+	    text-align: center;
+	    border-radius: 100px;
+	}
+
+	[component="post/vote-count"]:hover {
+		background-color: rgba(0,0,0,0.15);
 	}
 
 	[component="post/parent"] {
@@ -276,6 +297,8 @@
 	}
 
 	.post-tools {
+		text-transform: lowercase;
+
 		a {
 			padding: 1rem 10px;
 			.pointer;
@@ -418,13 +441,18 @@
 		}
 	}
 
+  [component="post/upvote"].upvoted, [component="post/downvote"].downvoted {
+			color: #DD3333;
+	}
+
 	.posts {
 		&.timeline {
 			.timeline-style;
 		}
 
 		list-style-type: none;
-		padding: 0;
+		padding: 1rem;
+		background-color: white;
 
 		[component="post"] {
 			position: relative;
@@ -476,7 +504,7 @@
 			}
 
 			iframe, .img-responsive {
-				max-width: 85%;
+				// max-width: 85%;
 				display: inline;
 			}
 

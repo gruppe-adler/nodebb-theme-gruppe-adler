@@ -1,9 +1,9 @@
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle pull-left" id="mobile-menu">
+				<button type="button" class="navbar-toggle pull-right" id="mobile-menu">
 					<i class="fa fa-lg fa-fw fa-bars unread-count" data-content="{unreadCount.mobileUnread}" data-unread-url="{unreadCount.unreadUrl}"></i>
 				</button>
 				{{{ if config.loggedIn }}}
-				<button type="button" class="navbar-toggle" id="mobile-chats">
+				<button type="button" class="navbar-toggle right" id="mobile-chats">
 					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></span>
 					<span component="chat/icon" class="notification-icon fa fa-fw fa-comments unread-count" data-content="{unreadCount.chat}"></span>
 					{buildAvatar(user, "md", true)}

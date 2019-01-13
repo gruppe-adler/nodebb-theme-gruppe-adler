@@ -87,6 +87,12 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus {
 	}
 }
 
+#groups-list .panel-heading.list-cover {
+  background-image: none !important;
+  min-height: 0;
+}
+
+
 
 .topic .topic-item, .category .category-item {
 	-webkit-transition: background-color 500ms linear;
@@ -95,6 +101,16 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus {
 	-o-transition: background-color 500ms linear;
 	transition: background-color 500ms linear;
 }
+
+.category-item[data-relative-time="future"] .topic-row {
+  border-left: 5px solid #96d11f;
+}
+
+.category-item[data-relative-time="past"] .topic-row {
+  border-left: 5px solid #9e9e9e;
+}
+
+
 
 .topic .topic-item.highlight, .category .category-item.highlight {
 	background-color: lighten(@brand-info, 20%);
