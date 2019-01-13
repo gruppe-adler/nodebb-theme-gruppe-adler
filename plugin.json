@@ -1,11 +1,12 @@
 {
-	"id": "nodebb-theme-persona",
-	"library": "library.js",
+	"id": "nodebb-theme-gruppe-adler",
+	"library": "./library.js",
 	"hooks": [
 		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
 		{ "hook": "filter:config.get", "method": "getThemeConfig" },
 		{ "hook": "static:app.load", "method": "init" },
 		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
+		{ "hook": "filter:meta.getLinkTags", "method": "getLinkTags"},
 		{ "hook": "filter:topic.build", "method": "addUserToTopic" }
 	],
 	"scripts": [

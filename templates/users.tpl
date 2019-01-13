@@ -7,7 +7,7 @@
 </div>
 <div class="users">
 	<div class="row">
-		<div class="col-lg-6">
+		<div class="col-lg-6 list-menu">
 		<!-- IMPORT partials/users_list_menu.tpl -->
 		</div>
 		<div class="col-xs-3 text-right">
