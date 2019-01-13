@@ -234,7 +234,7 @@ $(document).ready(function () {
 				menu: document.getElementById('menu'),
 				width: 256,
 				margin: margin,
-				side: swapped ? 'right' : 'left',
+				side: 'right',
 			});
 			$('#menu').removeClass('hidden');
 

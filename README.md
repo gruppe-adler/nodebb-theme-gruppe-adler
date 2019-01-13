@@ -1,16 +1,16 @@
-Persona theme for NodeBB
-====================
+Gruppe Adler Theme for NodeBB
+=============================
 
-The Persona theme is the default theme for NodeBB for versions spanning v0.7.1 through to v2.x
+Gruppe Adler Theme for NodeBB. Based on [Persona](https://github.com/NodeBB/nodebb-theme-persona).
 
-For the v3.x release line, Persona will be a supported theme bundled with NodeBB, but will not be active by default.
+Development strategy: rebase on latest Persona, apply our changes & build on them
 
-## Addons
+## How
 
-[Recent Cards](https://github.com/psychobunny/nodebb-plugin-recent-cards)
+After cloning this repo, do this:
 
-## Screenshots
-
-![](https://d2gn4xht817m0g.cloudfront.net/p/product_screenshots/images/original/000/570/286/570286-db378dfd28256a8fabacc9129b3638dc678ac393.png?1439315393)
-
-![](https://d2gn4xht817m0g.cloudfront.net/p/product_screenshots/images/original/000/570/287/570287-5875c63ce086d361b76d94e5bc7cc88a5fd34b8b.png?1439315419)
+* `git remote add upstream https://github.com/NodeBB/nodebb-theme-persona.git
+* `git fetch upstream`
+* `git checkout 1.17.x`  (whatever our current nodebb major/minor version is)
+    * if it does not exist yet, do `git checkout -b 1.17.x`
+* `git rebase` onto whatever version is in the target NodeBB version's instal/package.json
