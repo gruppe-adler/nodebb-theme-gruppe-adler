@@ -136,8 +136,28 @@
 		}
 	}
 
-	[component="post/upvote"].upvoted, [component="post/downvote"].downvoted {
-		color: #DD3333;
+	.fa-heart {
+	    vertical-align: -2px;
+	}
+
+	.topic [component="post/upvote"].upvoted, .topic [component="post/downvote"].downvoted {
+			color: #DD3333;
+		}
+		
+	[component="post/vote-count"] {
+	    bottom: 1px;
+	    width: 18px;
+	    display: inline-block;
+	    height: 18px;
+	    font-size: 100%;
+	    cursor: pointer;
+	    background-color: rgba(0,0,0,0.05);
+	    text-align: center;
+	    border-radius: 100px;
+	}
+
+	[component="post/vote-count"]:hover {
+	    background-color: rgba(0,0,0,0.15);
 	}
 
 	[component="post/parent"] {
