@@ -60,25 +60,3 @@ body {
   background-color: #404040;
   text-decoration: none;
 }
-
-#fake-header {
-  width: 100%;
-  background: black;
-  line-height: 1.5;
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  &:after {
-    content:"";
-    display:table;
-    clear: both;
-  }
-}
-
-@media screen and (max-width: @grid-float-breakpoint) {
-  #fake-header {
-    visibility: hidden;
-    clear: both;
-    display: none;
-  }
-}
