@@ -13,4 +13,4 @@ After cloning this repo, do this:
 * `git fetch upstream`
 * `git checkout 1.17.x`  (whatever our current nodebb major/minor version is)
     * if it does not exist yet, do `git checkout -b 1.17.x`
-* `git rebase `
+* `git rebase v11.0.21`
