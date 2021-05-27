@@ -1,0 +1,318 @@
+.stats-votes {
+    display: none;
+}
+  
+[component="category/topic"].locked::before {
+    display: none;
+}
+
+.locked::before {
+    display: none;
+}
+
+// hide administrators in group view
+div [data-slug="administrators"], .groups .row:first-child {
+    display: none;
+}
+
+/****************************************************************************************************
+ * less/topic.less overwrites
+ ****************************************************************************************************/
+.topic {
+    .post-tools {
+        text-transform: lowercase;
+    }
+
+    .content {
+        min-height: initial;
+    }
+
+    .topic-header {
+        position: initial;
+    }
+    
+    .posts {
+        padding: 1rem;
+        background-color: white;
+        
+        .content {
+            iframe, .img-responsive {
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width: @screen-md-min) {
+            [component="post/metadata"], .post-tools, .moderator-tools {
+                opacity: 1 !important;
+            }
+        }
+    }
+
+
+    .votes {
+        font-size: 12px;
+        display: inline-flex;
+        align-items: center;
+
+        [component="post/upvote"],
+        [component="post/downvote"] {
+            transition: all 0.2s ease;
+            font-size: 1.5em;
+            
+            &:hover {
+                color: #DD3333;
+            }
+        }
+    
+        [component="post/upvote"].upvoted,
+        [component="post/downvote"].downvoted {
+            color: #DD3333;
+        }
+    
+        [component="post/vote-count"] {
+            width: 1.5em;
+            background-color: rgba(0,0,0,0.05);
+            padding: 0;
+            text-align: center;
+            height: 1.4em;
+            line-height: 1.4em;
+            border-radius: 50%;
+            cursor: pointer;
+            &:hover {
+                background-color: rgba(0,0,0,0.15);
+            }
+        }
+    }
+
+}
+
+/****************************************************************************************************
+ * less/modules/nprogress.less overwrites
+ ****************************************************************************************************/
+#nprogress {
+    .bar {
+        background: #D18D1F;
+    }
+
+    .peg {
+        box-shadow: 0 0 10px #D18D1F, 0 0 5px #D18D1F;
+    }
+
+    .spinner-icon {
+        border-top-color: #D18D1F;
+        border-left-color: #D18D1F;
+    }
+}
+
+/****************************************************************************************************
+ * less/header.less overwrites
+ ****************************************************************************************************/
+.header {
+    .forum-logo {
+        padding: 3px;
+
+    }
+
+    @media (max-width: @screen-xs-max) {
+        .forum-logo {
+            margin-left: 25px;
+        }
+    }
+}
+
+/****************************************************************************************************
+ * less/category.less overwrites
+ ****************************************************************************************************/
+.category, .categories, .subcategory {
+    .category-children {
+        display: none;
+    }
+}
+
+/****************************************************************************************************
+ * less/groups.less overwrites
+ ****************************************************************************************************/
+.groups.list {
+	[component="groups/summary"] {
+		.list-cover {
+			min-height: initial;
+        }
+    }
+}
+
+/****************************************************************************************************
+ * less/categories.less overwrites
+ ****************************************************************************************************/
+.categories, .category > ul {
+    > li {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        background-color: white;
+        border-bottom: 1px solid #f0f0f0;
+        padding-bottom: initial;
+        display: flex;
+        align-items: center;
+
+        @media (min-width: @screen-sm-min) {
+            &:first-of-type {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        
+            &:last-of-type {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+        
+        .content {
+            .title {
+				a {
+					color: #555;
+					&:hover {
+						color: #D18D1F;
+					}
+				}
+
+				> .description {
+					display: block;
+					margin-top: 5px;
+				}
+            }
+            
+            .icon {
+				padding: initial;
+				padding-left: 13.5px;
+				padding-top: 14.5px;
+				min-width: initial;
+				min-height: initial;
+				width: 48px;
+				height: 48px;
+				margin-top: 1vh;
+                margin-bottom: 1vh;
+            }
+
+            h2 {
+                margin-top: 1vh;
+            }
+        }
+
+        .stats {
+            margin-top: initial;
+        }
+
+        .card {
+            margin-top: initial;
+
+            .post-content {
+                margin-top: 2px;
+            }
+        }
+
+        [component="topic/header"] > i[component="topic/pinned"] {
+			color: inherit;
+		}
+    }
+}
+
+/****************************************************************************************************
+ * less/bootstrap/navbar.less overwrites
+ ****************************************************************************************************/
+.navbar {
+    .container {
+        padding: 0;
+        margin: 0 auto;
+        @media (min-width: @screen-sm-min) {
+            width: @container-sm;
+        }
+        @media (min-width: @screen-md-min) {
+            width: @container-md;
+        }
+        @media (min-width: @screen-lg-min) {
+            width: @container-lg;
+        }
+    }
+}
+.navbar-toggle {
+    &#mobile-chats {
+        margin-right: 5px;
+    }
+    &#mobile-menu {
+        margin-right: 15px;
+    }
+}
+
+/****************************************************************************************************
+ * less/users.less overwrites
+ ****************************************************************************************************/
+.users {
+    .nav-pills {
+        > li {
+            margin-top: 5px;
+
+            a {
+                border-radius: 100px;
+                color: #555;
+                margin-right: 10px;
+                transition: all 0.2s ease;
+            }
+
+            &.active, &:active {
+                a {
+                    box-shadow: none;
+                    background-color: #D18D1F  !important;
+                    color: #fff !important;
+                }
+            }
+
+            &:hover, &:focus {
+                a {
+                    background-color: @nav-link-hover-bg !important;
+                    color: #555 !important;
+                }
+            }
+        }
+    }
+
+    .search {
+        margin-top: 1rem;
+        @media (min-width: 1200px) {
+            margin-top: 0;
+        }
+    }
+}
+
+/****************************************************************************************************
+ * less/bootstrap/navs.less overwrites
+ ****************************************************************************************************/
+.nav-pills {
+    > li {
+        > a {
+            color: #555;
+            margin-right: 10px;
+      
+            background-color: rgba(0,0,0,0.1);
+            padding: 5px 20px;
+            top: 10px;
+        }
+
+        &.active > a,
+        &:active > a,
+        > a:active,
+        > a.active {
+            box-shadow: none;
+            background-color: #333 !important;
+            color: #fff !important;
+            padding: 5px 20px;
+            top: 10px;
+        }
+    }
+}
+
+/****************************************************************************************************
+ * less/topics_list.less overwrites
+ ****************************************************************************************************/
+.topic-list-header {
+    border-top: none;
+    border-bottom: none;
+    position: initial;
+}

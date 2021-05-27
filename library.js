@@ -106,6 +106,16 @@ library.getThemeConfig = function(config, callback) {
 	});
 };
 
+library.getLinkTags = function (data, callback) {
+	data.links.push({
+		rel: 'prefetch stylesheet',
+		type: '',
+		href: 'https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro',
+	});
+
+	callback(null, data);
+}
+
 function renderAdmin(req, res, next) {
 	res.render('admin/plugins/persona', {});
 }

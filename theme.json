@@ -1,7 +1,7 @@
 {
-    "id": "nodebb-theme-persona",
-    "name": "Persona",
-    "description": "The default theme for NodeBB. Uses a standard approach to forum design.",
-    "url": "https://github.com/psychobunny/nodebb-theme-persona",
+    "id": "nodebb-theme-gruppe-adler-v2",
+    "name": "Gruppe Adler",
+    "description": "Theme for forum.gruppe-adler.de",
+    "url": "https://github.com/gruppe-adler/nodebb-theme-gruppe-adler",
     "screenshot": "screenshot.png"
 }

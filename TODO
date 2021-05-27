@@ -1,0 +1,44 @@
+Allgemeine Sachen:
+[ ] Screenshot
+[ ] Nav Bar
+[x] Fonts stylesheet
+
+Commit "apply changes for Gruppe Adler":
+[x] README.md                           // So umgesetzt
+[x] custom.less                         // L1-19 unnötig | Rest in less/gruppe-adler.less umgesetzt
+[x] less/bootstrap/navbar.less          // in less/gruppe-adler.less umgesetzt
+[x] less/bootstrap/navs.less            // in less/gruppe-adler.less umgesetzt
+[x] less/bootstrap/variables.less       // So umgesetzt
+[x] less/categories.less                // in less/gruppe-adler.less umgesetzt
+[x] less/category.less                  // L82-87 ist unnötiger shizzle | Rest in less/gruppe-adler.less umgesetzt
+[x] less/fake-header.less               // Fällt raus
+[x] less/header.less                    // in less/gruppe-adler.less umgesetzt
+[x] less/modules/nprogress.less         // in less/gruppe-adler.less umgesetzt
+[x] less/persona.less                   // Fällt raus
+[x] less/style.less                     // L112-121 in Attendance Plugin | L98 backround-image aus templates/partials/groups/list.tpl gelöscht | L99 min-height als overwrite von less/groups.less
+[x] less/topic.less                     // in less/gruppe-adler.less umgesetzt
+[x] less/users.less                     // in less/gruppe-adler.less umgesetzt
+[x] lib/persona.js                      // So umgesetzt
+[x] library.js                          // So umgesetzt
+[x] package.json                        // So umgesetzt
+[x] plugin.json                         // So umgesetzt
+[x] templates/account/edit.tpl          // So umgesetzt
+[x] templates/header.tpl                // Fällt raus
+[x] templates/partials/fake-header.tpl  // Fällt raus
+[x] templates/partials/groups/list.tpl  // So umgesetzt
+[x] templates/partials/menu.tpl         // So umgesetzt
+[x] templates/partials/topic/post.tpl   // So umgesetzt
+[x] templates/partials/topics_list.tpl  // So umgesetzt
+[x] templates/partials/users_list_menu.tpl  // So umgesetzt
+[x] templates/users.tpl                 // Fällt raus
+[x] theme.json                          // So umgesetzt
+[x] theme.less                          // So umgesetzt
+
+
+Commits:
+[x] https://github.com/gruppe-adler/nodebb-theme-gruppe-adler/commit/a9f4b466addd6dcd7879990a98a2dc3a3c61c454   // Fällt raus
+[x] https://github.com/gruppe-adler/nodebb-theme-gruppe-adler/commit/50b8c751244a1de1e39a5f3b25fc5e96639d2160
+[x] https://github.com/gruppe-adler/nodebb-theme-gruppe-adler/commit/027377c5c57cb6ef103cff0e671876dafefc62f1
+[x] https://github.com/gruppe-adler/nodebb-theme-gruppe-adler/commit/c46c61291e8216af6ed621e895b5feb50c820582
+[x] https://github.com/gruppe-adler/nodebb-theme-gruppe-adler/commit/d5498b75818fb38867b33d266aec610dca4f5ae9
+[ ] https://github.com/gruppe-adler/nodebb-theme-gruppe-adler/commit/5c03673f4067d44ae5e4fbe5ec0aaacd0a9c05cb
