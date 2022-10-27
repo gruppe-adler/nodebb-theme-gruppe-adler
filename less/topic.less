@@ -201,7 +201,6 @@
 
 	[component="post/vote-count"] {
 		display: inline-block;
-		padding: 1rem 0.5rem;
 	}
 
 	[component="post/parent"] {
@@ -446,8 +445,11 @@
 		}
 	}
 
-  [component="post/upvote"].upvoted, [component="post/downvote"].downvoted {
-			color: #DD3333;
+    [component="post/upvote"].upvoted, [component="post/downvote"].downvoted {
+	    color: #DD3333;
+	}
+	[component="post/downvote"] {
+		display: none;
 	}
 
 	.posts {
@@ -640,9 +642,6 @@
 
 [component="post"] {
 	&.topic-owner-post>.post-header .avatar {
-		-webkit-box-shadow: 0px 0px 4px 3px @brand-primary;
-		-moz-box-shadow: 0px 0px 4px 3px @brand-primary;
-		box-shadow: 0px 0px 4px 3px @brand-primary;
 	}
 
 	.avatar.avatar-sm2x {
